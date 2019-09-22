@@ -5,11 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String TAG = "DatabaseHelper";
-    private static final String TABLENAME = "IRDevices";
+    private static final String DBNAME = "IR";
     private static final String col1 = "brand";
     private static final String col2 = "product";
     private static final String col3 = "power";
@@ -20,14 +21,13 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String col8 = "chdown";
 
     public DatabaseHelper(Context context) {
-        super(context, TABLENAME , null , 1);
-
+        super(context, DBNAME , null , 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createtable = "create table if not exists IRDevices ( brand TEXT , product TEXT , power TEXT , mute TEXT , volup TEXT , voldown TEXT , chup TEXT , chdown TEXT);";
-        db.execSQL(createtable);
+        db.execSQL(createtable);  /// executes the sql query and updates the database accordingly.
     }
 
     @Override
@@ -35,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         SQLiteOpenHelper p;
     }
 
-    public boolean addData(String brand , String product ,String power , String mute , String volup , String voldown , String chup , String chdown )
+    public boolean addData(String brand, String product, String power, String mute, String volup, String voldown, String chup, String chdown)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -47,7 +47,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         cv.put("voldown",voldown);
         cv.put("chup",chup);
         cv.put("chdown",chdown);
-        long result = db.insert(TABLENAME,null,cv);
+        long result = db.insert("IRDevices",null,cv);
 
         if( result == -1)
             return false;

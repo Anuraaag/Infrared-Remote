@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/jagraj/Downloads/MyApp/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/jagraj/Downloads/MyApp/app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/media/anurag/New Volume1/Projects/Infrared-Remote/MyApp/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/media/anurag/New Volume1/Projects/Infrared-Remote/MyApp/app/src/debug/jniLibs"/></dataSet></merger>

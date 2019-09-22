@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jagraj/Downloads/MyApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/media/anurag/New Volume1/Projects/Infrared-Remote/MyApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/jagraj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/5480e770e1d775154d4155d6de2aa6ea/res/values-v26/values-v26.xml",
+                    "source": "/home/anurag/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/afd1113f3c5a4fe4dc0f5139e8525f0e/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
