@@ -1,5 +1,5 @@
 #include "ESP8266WiFi.h"
-#include "PubSubClient.h"  // Read the rest of the article
+//#include "PubSubClient.h"  // Read the rest of the article
 #include <stdlib.h>
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
@@ -57,7 +57,7 @@ void setup() {
    
       Serial.println("connected");  
  
-       client.publish("esp/test1", "hello" );   //for testing
+       client.publish("esp/test1", "Ready to Register" );   //for testing
        client.subscribe("MyApp/Transmit/#");            
  
     } else {
@@ -90,7 +90,7 @@ void transmit(char * data)
   unsigned long x  = strToHex(data);
   Serial.print(x);
 //  #if SEND_GLOBALCACHE
-  irsend.sendNEC(x, 32);
+  irsend.sendNEC(1129715076, 32);
 //#else   // SEND_GLOBALCACHE
 //  Serial.println("Can't send because SEND_GLOBALCACHE has been disabled.");
 //#endif  // SEND_GLOBALCACHE

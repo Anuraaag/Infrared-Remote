@@ -93,8 +93,8 @@ public class remote_use extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(2);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(2);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");
@@ -117,8 +117,8 @@ public class remote_use extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(3);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(3);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");
@@ -141,8 +141,8 @@ public class remote_use extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(4);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(4);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");
@@ -165,8 +165,8 @@ public class remote_use extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(5);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(5);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");
@@ -196,8 +196,8 @@ public class remote_use extends AppCompatActivity {
                     b6.setEnabled(true);
                 }
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(6);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(6);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");
@@ -227,8 +227,8 @@ public class remote_use extends AppCompatActivity {
                     b5.setEnabled(true);
                 }
                 vibe.vibrate(80);
-                topic = "MyApp/Mode";
-                String payload = brand + "-" + data.getString(7);
+                topic = "MyApp/Transmit/t";
+                String payload = data.getString(7);
                 byte[] encodedPayload = new byte[0];
                 try {
                     encodedPayload = payload.getBytes("UTF-8");

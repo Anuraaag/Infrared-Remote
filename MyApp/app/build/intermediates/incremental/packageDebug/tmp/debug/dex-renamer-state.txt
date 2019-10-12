@@ -1,4 +1,4 @@
-#Sun Sep 22 20:32:56 IST 2019
+#Thu Sep 26 02:29:37 IST 2019
 base.0=/media/anurag/New Volume1/Projects/Infrared-Remote/MyApp/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
